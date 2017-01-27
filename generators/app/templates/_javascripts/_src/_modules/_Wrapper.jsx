@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchGrades } from '../actions';
-
-
 class Wrapper extends Component {
 	constructor(props) {
 		super(props);
@@ -11,7 +8,7 @@ class Wrapper extends Component {
 	}
 
 	clickHandler() {
-		this.props.dispatch(fetchGrades())
+		
 	}
 
 	render() {
@@ -26,8 +23,8 @@ class Wrapper extends Component {
 	}
 }
 
-const mapStateToProps = (state) => ({
-	grades: state.app.grades
-})
+// const mapStateToProps = (state) => ({
+// 	grades: state.app.grades
+// })
 
 export default Wrapper = connect(mapStateToProps)(Wrapper)
