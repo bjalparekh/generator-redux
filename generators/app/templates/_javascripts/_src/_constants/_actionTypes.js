@@ -1,0 +1,2 @@
+// APP ACTIONS
+export const FETCH_GRADES = 'FETCH_GRADES';
